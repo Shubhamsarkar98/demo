@@ -38,7 +38,8 @@ const Home = () => {
 
     return (
         <>
-            <div className='flex justify-center items-center space-between'>
+        
+            <div className='flex justify-center items-center space-between mt-4'>
                 <Selected
                     data={fakeData}
                     selectedCategory={selectedCategory}
