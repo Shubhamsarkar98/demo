@@ -2,6 +2,7 @@ import React from 'react'
 import Card from '../components/Card'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import Selected from '../components/Selected'
 const Home = () => {
     const [fakeData, setFakeData] = useState([])
 
@@ -14,11 +15,14 @@ const Home = () => {
         })
     }
     return (
+        <>
+        <Selected data={fakeData}/>
         <div className="grid grid-cols-3 gap-4">
             {fakeData.map((data, index) => {
                 return <Card key={index} data={data} />
             })}
         </div>
+        </>
     )
 }
 
