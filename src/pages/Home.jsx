@@ -17,7 +17,7 @@ const Home = () => {
                 setFakeData(response.data);
             });
     };
-
+   //-------Child to perent data pass------------------/////
     const handleCategoryChange = (category) => {
         setSelectedCategory(category);
     };
