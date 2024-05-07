@@ -21,7 +21,7 @@ const Items = () => {
   }, [id]);
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mt-4">
       {item ? (
         <CardItem item={item} />
       ) : (
